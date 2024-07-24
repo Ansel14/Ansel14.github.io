@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+  body {
+    @apply font-monts font-bold overflow-x-hidden;
+  }
+  .container {
+    @apply max-w-[1600px] w-full px-4 mx-auto;
+  }
+  .banner__wrapper .btn {
+    @apply flex self-start w-fit py-4 px-3;
+  }
+  .banner__socials {
+    @apply flex flex-col relative -left-4;
+  }
+  .banner__items a {
+    @apply flex flex-row items-center gap-1;
+  }
+  .banner__items a i {
+    @apply text-3xl px-4 py-3 rounded-full duration-300 hover:bg-primary hover:transition hover:duration-300;
+  }
+  .banner__logo img {
+    @apply absolute -right-[12.5rem] top-96 w-[45rem] opacity-30;
+  }
+  .about__skills {
+    @apply flex justify-center;
+  }
+  .about__skills--wrapper {
+    @apply flex flex-row justify-around items-center my-12 w-[90%];
+  }
+  .about__card {
+    @apply bg-secondary rounded-3xl p-10 w-80 h-full flex flex-col gap-4 items-center text-center;
+  }
+  .about__card img {
+    @apply w-40;
+  }
+  .about__card h2 {
+    @apply text-xl text-primary;
+  }
+  .about__card p {
+    @apply font-normal;
+  }
+}
+@layer components {
+  header {
+    @apply fixed w-full bg-secondary z-[99999] shadow-5;
+  }
+  .header__wrapper {
+    @apply flex flex-row justify-between items-center py-5;
+  }
+  .header__nav {
+    @apply flex flex-row gap-8 justify-center;
+  }
+  .header__nav li a {
+    @apply hover:text-primary;
+  }
+  .header__wrapper--socials {
+    @apply flex flex-row gap-2 text-primary;
+  }
+  .header__wrapper--socials li a i {
+    @apply text-3xl px-4 py-3 rounded-full hover:text-secondary hover:bg-primary hover:transition hover:duration-300 duration-300;
+  }
+  section {
+    @apply h-screen;
+  }
+  .details {
+    @apply text-secondary w-[60rem] mx-auto text-center;
+  }
+  .details h2 {
+    @apply text-primary text-5xl;
+  }
+  .details h3 {
+    @apply pb-4;
+  }
+  .details p {
+    @apply font-normal;
+  }
+}
+@layer utilities {
+  .btn {
+    @apply flex self-start w-fit bg-transparent border border-transparent rounded-full;
+  }
+  .btn.bg__primary {
+    @apply bg-primary hover:bg-secondary hover:text-dark hover:duration-300 duration-300;
+  }
+}
