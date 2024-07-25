@@ -81,6 +81,27 @@
   .details p {
     @apply font-normal;
   }
+  .project__slider--wrapper {
+    @apply flex flex-col;
+  }
+  .project__slider {
+    @apply flex justify-center;
+  }
+  .project__cards {
+    @apply flex flex-row;
+  }
+  .project__card--img {
+    @apply bg-primary w-[40rem];
+  }
+  .project__card--details {
+    @apply bg-dark max-w-80;
+  }
+  .project__slider .tns-outer {
+    @apply overflow-hidden max-w-[90%];
+  }
+  .project__slider .tns-outer button {
+    @apply hidden;
+  }
 }
 @layer utilities {
   .btn {

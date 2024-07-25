@@ -10,6 +10,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css"
+    />
   </head>
   <body>
     <!-- HEADER -->
@@ -175,17 +179,69 @@
     </section>
 
     <!-- PROJECTS -->
-    <section class="project">
+    <section class="project bg-secondary" id="project">
       <div class="container">
-        <div class="project__wrapper">
-          <div class="project__slider">
-            <div class="project__cards">
-              <div class="project__card--img"></div>
-              <div class="project__card--details"></div>
+        <div class="project__wrapper pt-48">
+          <div class="details">
+            <h2>Projects</h2>
+            <h3 class="text-dark">
+              Some of the work I did for my previous client
+            </h3>
+            <p class="font-normal text-base text-dark">
+              Here are a few pieces I created for myself as well as some for my
+              clients. I worked with my team on parts of stuff, designed some,
+              and wrote the code for others.
+            </p>
+          </div>
+          <div class="project__slider--wrapper">
+            <div class="project__slider">
+              <div class="project__cards">
+                <div class="project__card--img"></div>
+                <div class="project__card--details">
+                  <h3>Name of the Project</h3>
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Modi consequatur quod qui praesentium quia mollitia
+                    voluptatum suscipit consequuntur, provident porro veniam
+                    quae dicta, saepe rem facilis vel velit dolore perferendis?
+                  </p>
+                </div>
+              </div>
+              <div class="project__cards">
+                <div class="project__card--img"></div>
+                <div class="project__card--details">
+                  <h3>Name of the Project</h3>
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Modi consequatur quod qui praesentium quia mollitia
+                    voluptatum suscipit consequuntur, provident porro veniam
+                    quae dicta, saepe rem facilis vel velit dolore perferendis?
+                  </p>
+                </div>
+              </div>
+              <div class="project__cards">
+                <div class="project__card--img"></div>
+                <div class="project__card--details">
+                  <h3>Name of the Project</h3>
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Modi consequatur quod qui praesentium quia mollitia
+                    voluptatum suscipit consequuntur, provident porro veniam
+                    quae dicta, saepe rem facilis vel velit dolore perferendis?
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="project__slider--controls" id="controls">
+              <a href="prev"></a>
+              <a href="next"></a>
             </div>
           </div>
         </div>
       </div>
     </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <script src="./js/slider.js"></script>
   </body>
 </html>
