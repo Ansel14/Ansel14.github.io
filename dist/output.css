@@ -467,6 +467,8 @@ body{
   padding-right: 1rem;
 }
 
+/* BANNER */
+
 .banner__wrapper .btn{
   display: flex;
   width: -moz-fit-content;
@@ -521,6 +523,8 @@ body{
   opacity: 0.3;
 }
 
+/* ABOUT */
+
 .about__skills{
   display: flex;
   justify-content: center;
@@ -563,6 +567,81 @@ body{
 
 .about__card p{
   font-weight: 400;
+}
+
+/* CONTACT */
+
+#contact{
+  height: calc(100vh - 96px);
+}
+
+.contact__wrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.contact__details{
+  width: 50%;
+}
+
+.contact__details h3{
+  padding-bottom: 5rem;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.contact__socials{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.contact__socials--details i{
+  padding-right: 5rem;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.contact__form{
+  width: 50%;
+}
+
+.contact__form form{
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 2rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(226 239 222 / var(--tw-bg-opacity));
+  padding: 3rem;
+  --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.contact__form form input{
+  margin-bottom: 1.5rem;
+  border-bottom-width: .2rem;
+  --tw-border-opacity: 1;
+  border-color: rgb(34 34 34 / var(--tw-border-opacity));
+  background-color: transparent;
+}
+
+.contact__form form textarea{
+  height: 6rem;
+  resize: none;
+  border-bottom-width: .2rem;
+  --tw-border-opacity: 1;
+  border-color: rgb(34 34 34 / var(--tw-border-opacity));
+  background-color: transparent;
+}
+
+.contact__form form a{
+  margin-top: 1rem;
+  padding: 1rem;
+  --tw-text-opacity: 1;
+  color: rgb(226 239 222 / var(--tw-text-opacity));
 }
 
 *, ::before, ::after{
@@ -707,6 +786,8 @@ body{
   }
 }
 
+/* HEADER */
+
 header{
   position: fixed;
   z-index: 99999;
@@ -774,6 +855,8 @@ section{
   height: 100vh;
 }
 
+/* ABOUT AND PROJECT TITLE */
+
 .details{
   margin-left: auto;
   margin-right: auto;
@@ -798,40 +881,96 @@ section{
   font-weight: 400;
 }
 
+/* PROJECT */
+
 .project__slider--wrapper{
+  position: relative;
+  z-index: 10;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
+  height: auto;
+  width: 60%;
   flex-direction: column;
+  align-items: center;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 
 .project__slider{
   display: flex;
+  height: 30rem;
+  flex-direction: row;
   justify-content: center;
 }
 
 .project__cards{
+  position: relative;
   display: flex;
   flex-direction: row;
 }
 
-.project__card--img{
-  width: 40rem;
-  --tw-bg-opacity: 1;
-  background-color: rgb(2 98 162 / var(--tw-bg-opacity));
+.project__cards img{
+  width: 100%;
 }
 
 .project__card--details{
-  max-width: 20rem;
-  --tw-bg-opacity: 1;
-  background-color: rgb(34 34 34 / var(--tw-bg-opacity));
+  position: absolute;
+  top: 5rem;
+  left: 40rem;
+  z-index: 20;
+  display: flex;
+  max-width: 16rem;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+  --tw-text-opacity: 1;
+  color: rgb(226 239 222 / var(--tw-text-opacity));
 }
 
-.project__slider .tns-outer{
-  max-width: 90%;
+.project__card--details h3{
+  text-align: center;
+}
+
+.project__card--details p{
+  font-weight: 400;
+}
+
+.project__card--details a{
+  --tw-text-opacity: 1;
+  color: rgb(2 98 162 / var(--tw-text-opacity));
+}
+
+.project__slider--wrapper .tns-outer{
+  max-width: 100%;
   overflow: hidden;
 }
 
-.project__slider .tns-outer button{
-  display: none;
+.project__slider--controls .prev{
+  position: absolute;
+  left: -4rem;
+  top: 18rem;
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.project__slider--controls .next{
+  position: absolute;
+  right: -4rem;
+  top: 18rem;
+  font-size: 3rem;
+  line-height: 1;
+}
+
+footer{
+  --tw-bg-opacity: 1;
+  background-color: rgb(226 239 222 / var(--tw-bg-opacity));
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.footer__wrapper p{
+  font-weight: 400;
 }
 
 .relative{
@@ -882,6 +1021,10 @@ section{
 
 .pt-32{
   padding-top: 8rem;
+}
+
+.pt-40{
+  padding-top: 10rem;
 }
 
 .pt-48{

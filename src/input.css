@@ -13,6 +13,7 @@
   .container {
     @apply max-w-[1600px] w-full px-4 mx-auto;
   }
+  /* BANNER */
   .banner__wrapper .btn {
     @apply flex self-start w-fit py-4 px-3;
   }
@@ -28,6 +29,7 @@
   .banner__logo img {
     @apply absolute -right-[12.5rem] top-96 w-[45rem] opacity-30;
   }
+  /* ABOUT */
   .about__skills {
     @apply flex justify-center;
   }
@@ -46,8 +48,43 @@
   .about__card p {
     @apply font-normal;
   }
+  /* CONTACT */
+  #contact {
+    @apply h-[calc(100vh-96px)];
+  }
+  .contact__wrapper {
+    @apply flex flex-row justify-between;
+  }
+  .contact__details {
+    @apply w-[50%];
+  }
+  .contact__details h3 {
+    @apply text-3xl pb-20;
+  }
+  .contact__socials {
+    @apply flex flex-col gap-8;
+  }
+  .contact__socials--details i {
+    @apply text-3xl pr-20;
+  }
+  .contact__form {
+    @apply w-[50%];
+  }
+  .contact__form form {
+    @apply flex flex-col rounded-[2rem] bg-secondary mt-20 p-12 shadow-2xl;
+  }
+  .contact__form form input {
+    @apply mb-6 bg-transparent border-b-[.2rem] border-dark;
+  }
+  .contact__form form textarea {
+    @apply bg-transparent border-b-[.2rem] border-dark resize-none h-24;
+  }
+  .contact__form form a {
+    @apply text-secondary p-4 mt-4;
+  }
 }
 @layer components {
+  /* HEADER */
   header {
     @apply fixed w-full bg-secondary z-[99999] shadow-5;
   }
@@ -69,6 +106,7 @@
   section {
     @apply h-screen;
   }
+  /* ABOUT AND PROJECT TITLE */
   .details {
     @apply text-secondary w-[60rem] mx-auto text-center;
   }
@@ -81,26 +119,54 @@
   .details p {
     @apply font-normal;
   }
+  /* PROJECT */
   .project__slider--wrapper {
-    @apply flex flex-col;
+    @apply relative flex flex-col items-center h-auto py-10 w-[60%] mx-auto z-10;
   }
   .project__slider {
-    @apply flex justify-center;
+    @apply flex flex-row justify-center h-[30rem];
+  }
+  .tns-item {
+    @apply flex;
   }
   .project__cards {
-    @apply flex flex-row;
+    @apply relative flex flex-row;
   }
-  .project__card--img {
-    @apply bg-primary w-[40rem];
+  .project__cards img {
+    @apply w-full;
   }
   .project__card--details {
-    @apply bg-dark max-w-80;
+    @apply absolute flex flex-col justify-center text-secondary max-w-64 p-4 z-20 top-20 left-[40rem];
   }
-  .project__slider .tns-outer {
-    @apply overflow-hidden max-w-[90%];
+  .project__card--details h3 {
+    @apply text-center;
   }
-  .project__slider .tns-outer button {
+  .project__card--details p {
+    @apply font-normal;
+  }
+  .project__card--details a {
+    @apply text-primary;
+  }
+  .project__slider--wrapper .tns-outer {
+    @apply overflow-hidden max-w-full;
+  }
+  .project__slider--controls .prev {
+    @apply absolute -left-16 top-72 text-5xl;
+  }
+  .project__slider--controls .next {
+    @apply absolute -right-16 top-72 text-5xl;
+  }
+  .tns-outer > button {
     @apply hidden;
+  }
+  .tns-nav > button {
+    @apply hidden;
+  }
+  footer {
+    @apply bg-secondary py-6;
+  }
+  .footer__wrapper p {
+    @apply font-normal;
   }
 }
 @layer utilities {
